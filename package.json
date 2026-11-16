@@ -1,0 +1,29 @@
+{
+  "name": "job-queue-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:api": "node src/api/server.js",
+    "start:worker": "node src/worker/index.js",
+    "test": "jest --testTimeout=30000 --forceExit",
+    "test:watch": "jest --watch",
+    "chaos": "node scripts/chaos.js",
+    "benchmark": "node scripts/benchmark.js",
+    "benchmark:wait": "node scripts/benchmark.js --wait"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.3.0",
+    "ioredis": "^6.0.0",
+    "uuid": "^9.0.1",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "supertest": "^7.3.2"
+  }
+}
