@@ -1,4 +1,4 @@
-# Distributed Job Queue System
+# Redline Job Queue System
 
 A from-scratch distributed job queue built with **Node.js**, **Express**, and **Redis (ioredis)** — no BullMQ, Bull, or any ready-made queue library.
 
